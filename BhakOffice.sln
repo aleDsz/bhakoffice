@@ -3,9 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BhakOffice.Core", "BhakOffice.Core\BhakOffice.Core.csproj", "{F7B7A3C4-B54C-4AEC-9F3B-C62A69F531C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BhakOffice.Core.Tests", "BhakOffice.Core.Tests\BhakOffice.Core.Tests.csproj", "{5B45541F-F558-41EC-9600-EDCECBD9A5DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BhakOffice.Types", "BhakOffice.Types\BhakOffice.Types.csproj", "{8AC38414-CFC3-418F-96EB-54E8A1EF1219}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{94D83BC0-1C86-4CD1-BAFD-720B5ADDC12D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{2B69D9B7-57C9-45D1-B0A1-66A5697A03FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C47AE1B8-2B89-401E-8EE5-050B44821FD8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7B7A3C4-B54C-4AEC-9F3B-C62A69F531C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B7A3C4-B54C-4AEC-9F3B-C62A69F531C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B7A3C4-B54C-4AEC-9F3B-C62A69F531C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B7A3C4-B54C-4AEC-9F3B-C62A69F531C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B45541F-F558-41EC-9600-EDCECBD9A5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B45541F-F558-41EC-9600-EDCECBD9A5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B45541F-F558-41EC-9600-EDCECBD9A5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B45541F-F558-41EC-9600-EDCECBD9A5DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC38414-CFC3-418F-96EB-54E8A1EF1219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC38414-CFC3-418F-96EB-54E8A1EF1219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC38414-CFC3-418F-96EB-54E8A1EF1219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC38414-CFC3-418F-96EB-54E8A1EF1219}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7B7A3C4-B54C-4AEC-9F3B-C62A69F531C8} = {2B69D9B7-57C9-45D1-B0A1-66A5697A03FB}
+		{5B45541F-F558-41EC-9600-EDCECBD9A5DF} = {94D83BC0-1C86-4CD1-BAFD-720B5ADDC12D}
+		{8AC38414-CFC3-418F-96EB-54E8A1EF1219} = {2B69D9B7-57C9-45D1-B0A1-66A5697A03FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A8CC4120-56E9-4AA9-B7AD-8631482C64BE}
