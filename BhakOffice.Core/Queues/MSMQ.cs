@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Messaging;
 using BhakOffice.Types;
@@ -23,7 +23,7 @@ namespace BhakOffice.Core.Queues {
         try {
           transaction.Begin();
           var message = new QueueMessage() { topic = topic, payload = payload };
-          this._queue.Send(new Message(message, _formatter));
+          this._queue.Send(new Message(message, _formatter), topic, MessageQueueTransactionType.Single);
           transaction.Commit();
 
           return new Response(Returns.OK, message);
