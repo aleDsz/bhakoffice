@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C47AE1B8-2B89-401E-8EE5-050B44821FD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BhakOffice.Services.Notifications", "BhakOffice.Services.Notifications\BhakOffice.Services.Notifications.csproj", "{06C65586-FC23-41FF-AA58-B6BB1E9198B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8AC38414-CFC3-418F-96EB-54E8A1EF1219}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AC38414-CFC3-418F-96EB-54E8A1EF1219}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AC38414-CFC3-418F-96EB-54E8A1EF1219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C65586-FC23-41FF-AA58-B6BB1E9198B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C65586-FC23-41FF-AA58-B6BB1E9198B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C65586-FC23-41FF-AA58-B6BB1E9198B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C65586-FC23-41FF-AA58-B6BB1E9198B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{F7B7A3C4-B54C-4AEC-9F3B-C62A69F531C8} = {2B69D9B7-57C9-45D1-B0A1-66A5697A03FB}
 		{5B45541F-F558-41EC-9600-EDCECBD9A5DF} = {94D83BC0-1C86-4CD1-BAFD-720B5ADDC12D}
 		{8AC38414-CFC3-418F-96EB-54E8A1EF1219} = {2B69D9B7-57C9-45D1-B0A1-66A5697A03FB}
+		{06C65586-FC23-41FF-AA58-B6BB1E9198B5} = {C47AE1B8-2B89-401E-8EE5-050B44821FD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A8CC4120-56E9-4AA9-B7AD-8631482C64BE}
