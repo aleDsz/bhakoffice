@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace BhakOffice.Types {
   public class Response {
-    protected Returns _type;
-    protected Object _result;
+    public Returns type { get; set; }
+    public Object result { get; set; }
 
     public Response(Returns type, Object result) {
-      this._type = type;
-      this._result = result;
+      this.type = type;
+      this.result = result;
     }
 
     public Boolean IsSuccess() {
-      if (this._type == Returns.OK) {
+      if (this.type == Returns.OK) {
         return true;
       } else {
         return false;
@@ -23,7 +23,7 @@ namespace BhakOffice.Types {
     }
 
     public Object GetResult() {
-      return this._result;
+      return this.result;
     }
   }
 }
