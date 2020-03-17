@@ -6,7 +6,7 @@ using BhakOffice.Types;
 namespace BhakOffice.Core.Queues {
   public class Messenger {
     protected MessageQueue _queue = new MessageQueue();
-    private static readonly BinaryMessageFormatter _formatter = new BinaryMessageFormatter();
+    protected readonly BinaryMessageFormatter _formatter = new BinaryMessageFormatter();
 
     private Messenger(String queue_name) {
       this._queue = new MessageQueue(queue_name);
