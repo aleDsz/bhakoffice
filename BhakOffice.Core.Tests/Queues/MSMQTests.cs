@@ -35,7 +35,7 @@ namespace BhakOffice.Core.Tests.Queues {
     [TestMethod]
     public void TestSendMessage() {
       var queuer = MSMQ.GetNotificationsQueuer();
-      var result = queuer.Send("test", new ArrayList());
+      var result = queuer.Send("product_created", new ArrayList());
 
       Assert.IsTrue(result.IsSuccess());
     }
