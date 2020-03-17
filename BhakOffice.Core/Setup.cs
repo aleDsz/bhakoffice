@@ -29,6 +29,8 @@ namespace BhakOffice.Core {
           } else {
             message_queue = new MessageQueue(queue_name);
           }
+          
+          message_queue.SetPermissions(Environment.UserName, MessageQueueAccessRights.FullControl);
 
           message_queues.Add(message_queue);
         }
