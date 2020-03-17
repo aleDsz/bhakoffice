@@ -36,22 +36,26 @@ namespace BhakOffice.Core.Queues {
     }
 
     public Response Read(int count = 10) {
-      var messages = this._queue
-                     .GetAllMessages()
+      try {
+        var messages = this._queue.GetAllMessages()
                      .Take(count)
                      .ToArray();
 
       foreach (var msg in messages) {
         msg.Formatter = _formatter;
-        var message = (QueueMessage) msg.Body;
+          var message = (QueueMessage)msg.Body;
         message.id = msg.Id;
         this._messages.Add(message);
       }
 
       if (this._messages.Count == 0) {
         return new Response(Returns.Error, "There's no message avaliable");
-      } else {
+        }
+        else {
         return new Response(Returns.OK, this._messages);
+      }
+      } catch (Exception ex) {
+        return new Response(Returns.Error, ex.Message);
       }
     }
 
